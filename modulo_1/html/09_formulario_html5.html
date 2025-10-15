@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>PRIMERA PAGINA</title>
+    </head>
+    <body>
+        <p>
+            Formulario HTML5
+        </p>
+
+        <form action="proceso.php" method="post">
+            <fieldset>
+                <legend>
+                    Registro de Usuario
+                </legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                        </td>
+                        <td>
+                            <label for="nombre">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="Escribe tu Email">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fecha">Fecha de nacimiento</label>
+                            <input type="date" id="fecha" name="fecha">
+                            <br>
+                        </td>
+                        <td>
+                            <label for="color">Color favorito</label>
+                            <input type="color" id="color" name="color" >
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="genero">Genero</label>
+                            <input type="radio" id="m" name="genero" vakue="M"><label for="m">Masculino</label>
+                            <input type="radio" id="f" name="genero" vakue="F"><label for="f">Femenino</label>
+                        </td>
+                        <td>
+                            <label for="color">Pais</label>
+                            <select id="pais" name="pais">
+                                <option value="ec">Ecuador</option>
+                                <option value="co">Colombia</option>
+                                <option value="mx">México</option>
+                                <option value="ve">Venezuela</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="comentario">Comentarios</label>
+                            <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+                            <br>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="acepto" name="acepto" required>
+                            <label for="acepto">Acepto términos y condiciones</label>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Limpiar">
+            </fieldset>
+
+        </form>
+    </body>
+</html>
