@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto - Mr. Car</title>
+</head>
+<body>
+
+  <div class="contenedor">
+
+    <header>
+      <h1>Contacto</h1>
+      <p>Si tienes dudas o consultas, ¡escríbenos!</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="tabla.html">Tabla</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Formulario de Contacto</h2>
+        <form id="formulario" onsubmit="this.reset(); return false;">
+          <table>
+            <tr>
+              <td><label for="pais">País:</label></td>
+              <td>
+                <select id="pais" name="pais" required>
+                  <option value="">Selecciona tu país</option>
+                  <option value="Ecuador">Ecuador</option>
+                  <option value="USA">USA</option>
+                  <option value="España">España</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="ciudad">Ciudad:</label></td>
+              <td><input type="text" id="ciudad" name="ciudad" placeholder="Tu ciudad" required></td>
+            </tr>
+
+            <tr>
+              <td><label for="celular">Celular:</label></td>
+              <td><input type="tel" id="celular" name="celular" placeholder="Tu celular" required></td>
+            </tr>
+
+            <tr>
+              <td><label for="correo">Correo Electrónico:</label></td>
+              <td><input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required></td>
+            </tr>
+
+            <tr>
+              <td><label for="consulta">Consulta:</label></td>
+              <td><textarea id="consulta" name="consulta" rows="4" cols="50" placeholder="Escribe tu consulta" required></textarea></td>
+            </tr>
+
+            <tr>
+              <td><input type="submit" value="Enviar Consulta"></td>
+              <td><input type="reset" value="Limpiar"></td>
+            </tr>
+          </table>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mr. Car. Todos los derechos reservados.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
