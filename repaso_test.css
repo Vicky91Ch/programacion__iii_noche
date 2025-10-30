@@ -1,0 +1,167 @@
+/* ===== GENERAL ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #e7ebef;
+    margin: 0;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ===== HOJA A4 ===== */
+.hoja-a4 {
+    background: white;
+    width: 210mm;
+    height: 297mm;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== ENCABEZADO ===== */
+.encabezado {
+    background-color: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 25px 20px 40px;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.foto-container {
+    margin: 15px auto;
+}
+
+.foto-container img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+.encabezado h2 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.encabezado h3 {
+    margin: 5px 0;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.interes {
+    font-size: 14px;
+    margin: 10px 0 0;
+}
+
+.ingreso {
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+/* ===== SOBRE MI ===== */
+.sobre-mi {
+    background-color: #d9ecff;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    flex-shrink: 0;
+}
+
+/* ===== BLOQUES ===== */
+.bloques {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+    flex-shrink: 0;
+}
+
+.habilidades, .objetivos {
+    width: 48%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.habilidades {
+    background-color: #d7f5d3;
+}
+
+.objetivos {
+    background-color: #f9d3d3;
+}
+
+.habilidades h3, .objetivos h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+ul, ol {
+    margin-top: 10px;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+/* ===== TABLA ===== */
+.academico {
+    padding: 25px 40px;
+    flex-grow: 1;
+}
+
+.academico h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+th {
+    background-color: #0074cc;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: #f2f9ff;
+}
+
+/* ===== IMPRESIÓN ===== */
+@media print {
+    body {
+        background: none;
+        margin: 0;
+    }
+
+    .hoja-a4 {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+}
