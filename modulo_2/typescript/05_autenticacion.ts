@@ -4,12 +4,6 @@ interface Usuario {
     password: string;
 }
 
-const usuario1: UsuarioLogin = {
-    id: 1,
-    nombre: 'Pedro',
-    correo: 'pedro@gmail.com'
-};
-
 const usuarioParaLogin: UsuarioLogin = {
     id: 1,
     username: 'higueraf',
