@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <script src="01_example.js" defer></script>
+  <title>Manipulación del DOM</title>
+
+</head>
+<body>
+    <h1>Ejercicio propinas y persona</h1>
+    <p>Ingresa el valor de la cuenrta, elige el % de propina y valor de las cuentas por persona</p>
+    <input type="number" 
+    name="valor_cuenta" 
+    id="valor_cuenta"/>
+
+    <select>
+        <option>10%</option>
+        <option>15%</option>
+        <option>18%</option>
+        <option>20%</option>
+    </select>
+    <input type="number"
+    placeholder="personas"
+    name="personas"
+    id="personas"
+    />
+    <br/>
+    <button id="calcular_propina">Calcular</button>
+    <div id="resultado_calcular_propina"></div>
+</body>
+</html>
