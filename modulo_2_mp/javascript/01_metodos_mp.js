@@ -1,0 +1,1 @@
+console.log("Bienvenido a Alquiler de vehiculos desde  un archivo externo ")
